@@ -1,18 +1,19 @@
 <script setup>
-const isActive = true;
+import Hello from './components/Hello.vue';
 </script>
 
 <template>
   <h1>Vue 3 入門</h1>
-  <p class="underLine" :class="{ active: isActive }">v-bindの設定方法の確認</p>
+  <Hello message="Propsの使い方1" />
 </template>
 
 <style>
-.active {
-  color: red;
-  font-weight: 900;
-}
-.underLine {
-  text-decoration: underline;
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
